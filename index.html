@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio Númerico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Sorteio Númerico</h1>
+    <h3>Sorteia números aleatórios entre os números desejados</h3>
+
+    <div class="container">
+        <Label>Digite a quantidade de Números à sortear</Label>
+        <input name="numerosParaSortear" type="number" id="lines" placeholder="Digite aqui">
+
+    </div>
+
+    <div class="container">
+        <label for="">Sortear números entre</label>
+        <input name="numeroInicial" type="number" id="initialNumber" placeholder="Digite aqui">
+    </div>
+
+    <div class="container">
+        <label for="">e:</label>
+        <input name="numeroFinal" type="number" id="finalNumber" placeholder="Digite aqui">
+    </div>
+
+    <button class="menu"> <a href="#list" onclick="makeList()">Sortear</a></button>
+
+    <div class="list">
+
+        <ul id="list">
+
+        </ul>
+
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
