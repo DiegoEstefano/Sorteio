@@ -8,6 +8,8 @@
     color: white;
 }
 
+
+
 body {
     background-color: rgb(0, 0, 0);
     padding-top: 2rem;
@@ -45,6 +47,7 @@ input {
 
 ::-webkit-input-placeholder {
     color: rgb(159, 143, 245) ;
+    visibility: hidden;
  }
 
 .list {
@@ -60,8 +63,7 @@ p {
 }
 
 button {
-
-    width: 100%;
+    width: 30vw;
     border-radius: 0.5rem;
     padding: 1rem;
     font-size: 1.5rem;
@@ -72,12 +74,20 @@ button {
 
 @media (max-width: 400px){
 .container {
-    max-width: 90vw;
+    margin: auto;
+    max-width: 80vw;
     max-height: 100vh;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    justify-content: center;
+    
 }
+
+
+::-webkit-input-placeholder {
+    visibility: visible;
+ }
 
 label {
     padding-bottom: 1rem;
@@ -86,6 +96,10 @@ label {
 input {
     width: 100%;
     padding: 1rem;
+}
+
+button {
+    width: 90vw;
 }
 
 .list {
