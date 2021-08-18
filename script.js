@@ -21,9 +21,7 @@ const makeList = () => {
 
     alert('Digite uma quantidade de números válida')
 
-  } else if (numeroInicial.value >= numeroFinal.value) {
-    alert('O número inicial não pode ser menor que o número final')
-  } else if (numeroInicial.value == 0) {
+  } else if (parseInt(numeroInicial.value) > parseInt(numeroFinal.value)) {
     alert('O número inicial não pode ser menor que o número final')
   } else {
     list.style.visibility = "visible"
